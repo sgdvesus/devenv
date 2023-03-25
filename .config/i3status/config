@@ -1,0 +1,20 @@
+general{
+    colors = true
+    interval = 5
+}
+order +=  "disk /"
+order +=  "load"
+order +=  "time"
+order +=  "battery 0"
+disk "/" {
+    format = "%avail"
+}
+load {
+    format = "%1min"
+}
+time {
+    format = "%Y/%m/%d %A %H:%M:%S"
+}
+battery 0 {
+    format = "%status %percentage %remaining"
+}
