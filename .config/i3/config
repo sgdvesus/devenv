@@ -46,7 +46,7 @@ floating_modifier $mod
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -58,7 +58,7 @@ bindsym $mod+Shift+q kill
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
-bindsym $mod+d exec --no-startup-id kitty sh -c "i3-dmenu-desktop --dmenu=fzf"
+bindsym $mod+d exec --no-startup-id alacritty -e i3-dmenu-desktop --dmenu=fzf
 
 # change focus
 bindsym $mod+j focus left
@@ -190,13 +190,23 @@ bar {
         status_command i3status
         mode hide
 }
-assign [class="kitty"] 1
+# class for workspaces
 assign [class="Brave-browser"] 2
 assign [class="VirtualBox Manager"] 3
 assign [class="Zathura"] 4
+assign [class="java"] 5
 
-exec picom -cb
-exec setxkbmap -layout latam
-exec feh --bg-fill ~/Pictures/creed.jpg
-exec kitty
+# background image
+exec feh --no-fehbg --bg-fill ~/Pictures/creed.jpg
+# adjusts the computer display's color temperature
+exec --no-startup-id redshift
+#  A lightweight compositor for X11
+exec --no-startup-id  picom -b
+# set the keyboard using the X Keyboard Extension
+exec setxkbmap latam
+# Mouse enabled while typing
+exec xinput set-prop "ETPS/2 Elantech Touchpad" "libinput Disable While Typing Enabled" 0
+
+# init applications
+exec alacritty
 exec brave-browser
