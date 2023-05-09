@@ -40,6 +40,31 @@ Official [alacritty](https://alacritty.org/).
 
 - [x] .config/alacritty/alacritty.yml
 
+## TMUX
+
+Official [tmux](https://github.com/tmux/tmux).
+
+Require tmsession script.
+
+- [x] .config/tmux/tmux.conf
+
+|Keymaps|Use|
+|:---|:---|
+|`C-a` | Tmux prefix key. |
+|`C-a + s` | Tree mode sessions. |
+|`C-a + r` | Reload tmux config. |
+|`C-a + f` | New session in selected workspace. |
+|`C-a + d` | New session in devenv. |
+|`C-a + n` | New session in notes. |
+|`C-a + :` | Command prompt. |
+|`C-a + c` | New window n. |
+|`C-a + &` | Close window. |
+|`C-a + n` | Go to window `n`. |
+|`C-a + $vimotions` | Change focus pane. |
+|`C-a + %` | Split pane vertical. |
+|`C-a + "` | Split pane horizontal. |
+|`C-a + x` | Kill pane. |
+
 ## ZSH
 
 Official [zsh](https://www.zsh.org/)
