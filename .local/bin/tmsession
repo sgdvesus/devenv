@@ -1,0 +1,21 @@
+#!/bin/bash
+if [[ -z $1 ]]; then
+    select=$(find ~/dev ~/.config ~ -mindepth 1 -maxdepth 1 -type d | fzf)
+else
+    select=$1
+fi
+[[ -z $select ]] && exit 0
+
+select_name=$(basename $select | tr . _)
+tmux_running=$(pgrep tmux)
+
+if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
+    tmux new-session -s $select_name -c $select
+    exit 0
+fi
+
+if ! tmux has-session -t=$select_name 2> /dev/null; then
+    tmux new-session -ds $select_name -c $select
+fi
+
+tmux switch-client -t $select_name
