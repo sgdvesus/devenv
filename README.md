@@ -68,6 +68,7 @@ Require tmsession script.
 ## ZSH
 
 Official [zsh](https://www.zsh.org/)
+if you prefer .zshenv in the `$ZDOTDIR` as well, you must setting ZDOTDIR in the global configuration file `/etc/zsh/zshenv`.
 
 - [x] .config/zsh/.zshenv, contain env variables must be in the home directory.
 - [x] .config/zsh/.zshrc
