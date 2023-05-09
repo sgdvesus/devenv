@@ -4,11 +4,12 @@ Environment  Development.
 
 # Table of contents
 
-- [i3 wm](##i3-window-manger)
-- [zsh](##zsh)
-- [alacritty](##alacritty)
+- [i3 wm](#i3-window-manager)
+- [alacritty](#alacritty)
+- [tmux](#tmux)
+- [zsh](#zsh)
 
-## i3 WINDOW MANAGER
+# i3 WINDOW MANAGER
 
 Official site [i3wm](https://i3wm.org/).
 
@@ -34,13 +35,13 @@ vim_motions = `j` | `k` | `l` | `ñ`
 |`$mod+shift+r` | Restart i3. |
 |`$mod+shift+e` | Exit i3. |
 
-## Alacritty
+# Alacritty
 
 Official [alacritty](https://alacritty.org/).
 
 - [x] .config/alacritty/alacritty.yml
 
-## TMUX
+# TMUX
 
 Official [tmux](https://github.com/tmux/tmux).
 
@@ -56,6 +57,7 @@ Require tmsession script.
 |`C-a + f` | New session in selected workspace. |
 |`C-a + d` | New session in devenv. |
 |`C-a + n` | New session in notes. |
+|`C-a + t` | cht.sh script. |
 |`C-a + :` | Command prompt. |
 |`C-a + c` | New window n. |
 |`C-a + &` | Close window. |
@@ -65,7 +67,7 @@ Require tmsession script.
 |`C-a + "` | Split pane horizontal. |
 |`C-a + x` | Kill pane. |
 
-## ZSH
+# ZSH
 
 Official [zsh](https://www.zsh.org/)
 if you prefer .zshenv in the `$ZDOTDIR` as well, you must setting ZDOTDIR in the global configuration file `/etc/zsh/zshenv`.
