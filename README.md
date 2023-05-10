@@ -54,6 +54,9 @@ Require tmsession script.
 |`C-a` | Tmux prefix key. |
 |`C-a + s` | Tree mode sessions. |
 |`C-a + r` | Reload tmux config. |
+|`C-a + [` | Start copy-mode. |
+|`v` | Start selection in copy-mode. |
+|`y` | Yank selection to clipboard in copy-mode. |
 |`C-a + L` | Go to previous session. |
 |`C-a + f` | New session in selected workspace. |
 |`C-a + d` | New session in devenv. |
