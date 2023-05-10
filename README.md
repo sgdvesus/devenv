@@ -54,6 +54,7 @@ Require tmsession script.
 |`C-a` | Tmux prefix key. |
 |`C-a + s` | Tree mode sessions. |
 |`C-a + r` | Reload tmux config. |
+|`C-a + L` | Go to previous session. |
 |`C-a + f` | New session in selected workspace. |
 |`C-a + d` | New session in devenv. |
 |`C-a + n` | New session in notes. |
