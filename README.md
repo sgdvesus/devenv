@@ -89,3 +89,11 @@ if you prefer .zshenv in the `$ZDOTDIR` as well, you must setting ZDOTDIR in the
 [ZSH vi mode](https://github.com/jeffreytse/zsh-vi-mode)
 
 - [x] .config/zsh/vimodes.zsh
+
+# NVIM
+
+Official [nvim](https://neovim.io/)
+
+- [x] .config/nvim/init.lua
+- [x] .config/nvim/lua/keymaps.lua
+- [x] .config/nvim/lua/settings.lua
