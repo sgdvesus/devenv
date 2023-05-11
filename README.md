@@ -80,6 +80,11 @@ if you prefer .zshenv in the `$ZDOTDIR` as well, you must setting ZDOTDIR in the
 - [x] .config/zsh/.zshrc
 - [x] .config/zsh/aliases.zsh
 - [x] .config/zsh/completion.zsh
+- [x] .config/zsh/fn.zsh
+
+|Keymaps|Use|
+|:---|:---|
+|`C-h` | `fzf` history. |
 
 [ZSH vi mode](https://github.com/jeffreytse/zsh-vi-mode)
 

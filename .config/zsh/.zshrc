@@ -1,7 +1,19 @@
+bindkey -v
+autoload -U compinit; compinit # Completion
+_comp_options+=(globdots) # With hidden files
+autoload -Uz vcs_info
+precmd(){ vcs_info }
+autoload -Uz zsh/parameter
+autoload -Uz zsh/widget
+# ADD ALIASES, VIM, FZF
+source $ZDOTDIR/completion.zsh
+source $ZDOTDIR/aliases.zsh
+source $ZDOTDIR/fn.zsh
+source $ZDOTDIR/vimodes.zsh
+source $ZDOTDIR/fzf.zsh
+# SET OPTIONS
 setopt autocd
 setopt PROMPT_SUBST
-bindkey -v
-KEYTIMEOUT=1
 setopt BANG_HIST                 # Treat the '!' character specially during expansion.
 setopt HIST_EXPIRE_DUPS_FIRST    # Expire duplicate entries first when trimming history.
 setopt HIST_IGNORE_DUPS          # Don't record an entry that was just recorded again.
@@ -12,17 +24,8 @@ setopt HIST_SAVE_NO_DUPS         # Don't write duplicate entries in the history 
 setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording entry.
 setopt HIST_VERIFY               # Don't execute immediately upon history expansion.
 setopt HIST_BEEP                 # Beep when accessing nonexistent history.
-autoload -U compinit; compinit # Completion
-_comp_options+=(globdots) # With hidden files
-source $ZDOTDIR/completion.zsh
-autoload -Uz vcs_info
-precmd(){ vcs_info }
+# ZSTYLE
 zstyle ':vcs_info:git:*' formats ' %b'
-
-# Add aliases, vim, fzf
-source $ZDOTDIR/aliases.zsh
-source $ZDOTDIR/vimodes.zsh
-source $ZDOTDIR/fzf.zsh
-
 PS1='${vcs_info_msg_0_} %3~   '
-for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
+colorlis
+# '^S' C-q, '^D' EOF
