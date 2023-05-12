@@ -34,3 +34,5 @@ map("n","<C-k>","<cmd>cnext<cr>zz")
 map("n","<C-j>","<cmd>cprev<cr>zz")
 map("n","<leader>k","<cmd>lnext<cr>zz")
 map("n","<leader>j","<cmd>lprev<cr>zz")
+--PLUGINS
+map("n","<leader>u",vim.cmd.UndotreeToggle)
