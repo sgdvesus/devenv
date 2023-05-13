@@ -10,4 +10,8 @@ return require("packer").startup(function(use)
     use { "nvim-telescope/telescope.nvim", tag = "0.1.1", requires = { {"nvim-lua/plenary.nvim"} } } --Telescope
     use "nvim-telescope/telescope-file-browser.nvim" --File browser
     use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" } --Treesitter
+    -- LSP CONFIG
+    use "neovim/nvim-lspconfig" --Lsp preset config
+    use { "williamboman/mason.nvim", run = ":MasonUpdate" } --LSP server
+    use "williamboman/mason-lspconfig.nvim" --Mason lspconfig
 end)

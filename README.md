@@ -104,3 +104,4 @@ Official [nvim](https://neovim.io/). Use Packer as plugin manager.
 - [x] .config/nvim/after/plugin/neosolarized.lua
 - [x] .config/nvim/after/plugin/telescope.lua
 - [x] .config/nvim/after/plugin/treesitter.lua
+- [x] .config/nvim/after/plugin/mason-lspconfig.lua
