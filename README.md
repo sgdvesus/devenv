@@ -92,8 +92,15 @@ if you prefer .zshenv in the `$ZDOTDIR` as well, you must setting ZDOTDIR in the
 
 # NVIM
 
-Official [nvim](https://neovim.io/)
+Official [nvim](https://neovim.io/). Use Packer as plugin manager.
 
 - [x] .config/nvim/init.lua
 - [x] .config/nvim/lua/keymaps.lua
 - [x] .config/nvim/lua/settings.lua
+- [x] .config/nvim/lua/usplugins.lua
+- [x] .config/nvim/after/plugin/bufferline.lua
+- [x] .config/nvim/after/plugin/comment.lua
+- [x] .config/nvim/after/plugin/lualine.lua
+- [x] .config/nvim/after/plugin/neosolarized.lua
+- [x] .config/nvim/after/plugin/telescope.lua
+- [x] .config/nvim/after/plugin/treesitter.lua
