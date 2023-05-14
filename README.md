@@ -5,6 +5,7 @@ Environment  Development.
 # Table of contents
 
 - [i3 wm](#i3-window-manager)
+- [redshift](#redshift)
 - [alacritty](#alacritty)
 - [tmux](#tmux)
 - [zsh](#zsh)
@@ -42,6 +43,12 @@ Require usrecord script.
 |`$mod+shift+c` | Reload i3 config. |
 |`$mod+shift+r` | Restart i3. |
 |`$mod+shift+e` | Exit i3. |
+
+# Redshift
+
+Official [Redshift](https://github.com/jonls/redshift) adjust color temperature.
+
+- [x] .config/redshift/redshift.conf
 
 # Alacritty
 
