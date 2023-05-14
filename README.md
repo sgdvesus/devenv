@@ -48,7 +48,7 @@ Require usrecord script.
 
 Official [Redshift](https://github.com/jonls/redshift) adjust color temperature.
 
-- [x] .config/redshift/redshift.conf
+- [x] .config/redshift.conf
 
 # Alacritty
 
