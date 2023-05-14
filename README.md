@@ -8,6 +8,12 @@ Environment  Development.
 - [alacritty](#alacritty)
 - [tmux](#tmux)
 - [zsh](#zsh)
+- [nvim](#nvim)
+
+Requires configurations:
+
+- Install [fzf](https://github.com/junegunn/fzf), [fd](https://github.com/sharkdp/fd), [ripgrep](https://github.com/BurntSushi/ripgrep).
+vim_motions = left `h` | down `j` | up `k` | right `l`
 
 # i3 WINDOW MANAGER
 
@@ -15,8 +21,6 @@ Official site [i3wm](https://i3wm.org/).
 
 - [x] .config/i3/config
 - [x] .config/i3status/config
-
-vim_motions = `j` | `k` | `l` | `ñ`
 
 |Keymaps|Use|
 |:---|:---|
@@ -66,7 +70,7 @@ Require tmsession script.
 |`C-a + c` | New window n. |
 |`C-a + &` | Close window. |
 |`C-a + n` | Go to window `n`. |
-|`C-a + $vimotions` | Change focus pane. |
+|`C-a + $vim_motions` | Change focus pane. |
 |`C-a + %` | Split pane vertical. |
 |`C-a + "` | Split pane horizontal. |
 |`C-a + x` | Kill pane. |
