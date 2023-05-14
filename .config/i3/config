@@ -203,7 +203,7 @@ assign [class="java"] 5
 # background image
 exec feh --no-fehbg --bg-fill ~/Pictures/creed.jpg
 # adjusts the computer display's color temperature
-exec --no-startup-id redshift
+exec_always --no-startup-id redshift -P
 #  A lightweight compositor for X11
 exec --no-startup-id  picom -b
 # set the keyboard using the X Keyboard Extension
