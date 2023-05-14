@@ -180,6 +180,10 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+# latest-screenshot
+bindsym --release $mod+Print exec --no-startup-id import /tmp/latest-screenshot.png
+# record screen
+bindsym $mod+Shift+f exec bash ~/.local/bin/usrecord
 
 default_border none
 default_floating_border none

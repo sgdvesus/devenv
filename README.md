@@ -22,6 +22,8 @@ Official site [i3wm](https://i3wm.org/).
 - [x] .config/i3/config
 - [x] .config/i3status/config
 
+Require usrecord script.
+
 |Keymaps|Use|
 |:---|:---|
 |`$mod+return` | Start alacritty terminal. |
@@ -32,6 +34,8 @@ Official site [i3wm](https://i3wm.org/).
 |`$mod+shift+vim_motions` | Move focused window. |
 |`Mouse+$mod` | Drag floating window. |
 |`$mod+shift+space` | Toggle tilling/floating. |
+|`$mod+Print` | Take a screenshot. |
+|`$mod+shift+f` | Record screen. |
 |`$mod+n` | Go to workspace `n`. |
 |`$mod+shift+n` | Move container to workspace `n`. |
 |`$mod+shift+q` | Kill focus window. |
