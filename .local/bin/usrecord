@@ -16,10 +16,12 @@ if [ -s $PIDFILE ] && [ -d "/proc/$(cat $PIDFILE)" ]; then
     rm $PIDFILE
     # move the screencast into the user's video directory
     mv $OUTFILE $FINALFILE
+    notify-send --urgency=low  saved
 else
     # screen resolution
     SCREENRES=$(xrandr -q --current | grep '*' | awk '{print$1}')
 
+    notify-send --urgency=low init
     # write to the pidfile
     echo $$ > $PIDFILE &&
 
