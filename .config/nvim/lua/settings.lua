@@ -32,3 +32,5 @@ set.undofile = true
 -- highlights
 set.hlsearch = false
 set.incsearch = true
+-- LaText
+g.vimtex_view_method = 'zathura'
