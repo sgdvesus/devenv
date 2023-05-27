@@ -1,0 +1,5 @@
+set recolor
+set recolor-lightcolor \#110914
+set recolor-darkcolor \#e3cfe2
+set default-bg \#110914
+set guioptions none

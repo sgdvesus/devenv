@@ -6,6 +6,7 @@ Environment  Development.
 
 - [i3 wm](#i3-window-manager)
 - [redshift](#redshift)
+- [zathura](#zathura)
 - [alacritty](#alacritty)
 - [tmux](#tmux)
 - [zsh](#zsh)
@@ -49,6 +50,35 @@ Require usrecord script.
 Official [Redshift](https://github.com/jonls/redshift) adjust color temperature.
 
 - [x] .config/redshift.conf
+
+# Zathura
+
+Official [Zathura](https://pwmt.org/projects/zathura)a document viewer.
+
+- [x] .config/zathura/zathurarc
+
+|Keymaps|Use|
+|:---|:---|
+|`vim_motions` | Moves. |
+|`shift+h` | Go to the top of the currently selected page. |
+|`shift+l` | Go to the bottom of the currently selected page. |
+|`m+n` | New bookmark `n`. |
+|`n+'` | Load bookmark `n`. |
+|`shift+f` | Show links in the page. |
+|`f` | Load links. |
+|`a` | Fit the height of the current page to the display window. |
+|`s` | Fit the width of the current page to the display window. |
+|`C-u` | Move the document display window half a page up. |
+|`C-d` | Move the document display window half a page down. |
+|`tab` | Index. |
+|`=` | Reset zoom. |
+|`$zoom+=` | Set zoom to $zoom. |
+|`d` | Booklet format. |
+|`C-r` | Recolor. |
+|`shift+r` | Refresh document. |
+|`r` | Rotate by 90 degrees. |
+|`/` | Search term. |
+|`q` | Close. |
 
 # Alacritty
 
