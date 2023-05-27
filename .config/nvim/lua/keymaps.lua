@@ -1,5 +1,7 @@
 local map = vim.keymap.set
 local ls = require("luasnip")
+map("n","\\w","<cmd>set wrap<cr>") --wrap
+map("n","\\ww","<cmd>set nowrap<cr>") --unwrap
 map("n","+","<C-a>") --increment
 map("n","-","<C-x>") --decrement
 map("n","<C-e>","gg<S-v>G") --select all
@@ -35,6 +37,8 @@ map("n","<C-k>","<cmd>cnext<cr>zz")
 map("n","<C-j>","<cmd>cprev<cr>zz")
 map("n","<leader>k","<cmd>lnext<cr>zz")
 map("n","<leader>j","<cmd>lprev<cr>zz")
+--TMSESSION
+map("n","<C-f>","<cmd>silent !tmux neww tmsession<cr>")
 --PLUGINS
 map("n","<leader>u",vim.cmd.UndotreeToggle)
 -- DIAGNOSTIC, SEE `:help vim.diagnostic.*` FOR DOCUMENTATION ON ANY OF THE BELOW FUNCTIONS
