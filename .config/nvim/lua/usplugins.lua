@@ -22,6 +22,4 @@ return require("packer").startup(function(use)
     -- SNIPPETS
     use{ "L3MON4D3/LuaSnip", requires = {"rafamadriz/friendly-snippets"} } --Snippet
     use "saadparwaiz1/cmp_luasnip" --Snippets source nvim-cmp
-    use 'lervag/vimtex' --LaText
-
 end)
