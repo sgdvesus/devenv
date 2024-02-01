@@ -1,0 +1,11 @@
+[env]
+TERM = "alacritty"
+
+[font]
+size = 10.0
+
+[font.normal]
+family = "SauceCodePro Nerd Font"
+
+[window]
+opacity = 0.75

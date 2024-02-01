@@ -1,8 +1,0 @@
-env:
-  TERM: alacritty
-window:
-  opacity: 0.75
-font:
-  normal:
-    family: SauceCodePro Nerd Font
-  size: 10.0

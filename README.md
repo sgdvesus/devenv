@@ -65,7 +65,7 @@ A cross-platform, opengl terminal emulator. Official site [alacritty](https://al
 
 Install alacritty from [source](https://github.com/alacritty/alacritty/blob/master/install.md#prerequisites) requires rustup setup.
 
-- [x] .config/alacritty/alacritty.yml
+- [x] .config/alacritty/alacritty.toml
 
 # i3 window manager
 
