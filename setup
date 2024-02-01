@@ -1,0 +1,67 @@
+#!/bin/bash
+
+# x to debug
+set -euo pipefail
+
+dirs=()
+
+
+echo -e "Set environment config files...\n";
+
+fontdownload(){
+    sudo mkdir -p /usr/local/share/fonts/sourcecodepro
+    wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/SourceCodePro.zip 
+    sudo unzip SourceCodePro.zip -d /usr/local/share/fonts/sourcecodepro 
+    sudo rm -v SourceCodePro.zip
+    fc-cache -f -v
+    echo -e "Font Source Code Pro Installed\n";
+}
+
+linkenv(){
+    # dir of origen
+    origen=$HOME/dev/devenv/$1
+    destination=${2:-"$1"}
+
+    if [ -d "$origen" ]; then
+        # files from origen
+    	results=$(find "$origen" -type f)
+
+	for file in $results; do
+	    filename=$(basename "$file")
+	    ln -s $file $HOME/$destination/$filename;
+        done;
+	echo "Sync files from $1 completed";
+    else
+        echo "Source directory $origen does not exist."
+    fi
+}
+
+main(){
+    dir_paths=("alacritty" "i3" "i3status" "mpv" "nvim" "redshift" "tmux" "zathura" "zsh")
+
+    # Loop through the array and create directories
+    for dir_path in "${dir_paths[@]}"; do
+        mkdir -p $HOME/.config/$dir_path
+        echo "Created directory: $dir_path"
+    done
+
+    # Make bin directory
+    mkdir -p $HOME/.local/bin
+    echo "Created directory for .local/bin"
+
+    fontdownload
+    linkenv src Pictures
+    linkenv .local/bin
+    linkenv .config/alacritty
+    linkenv .config/i3
+    linkenv .config/i3status
+    linkenv .config/mpv
+    linkenv .config/redshift
+    linkenv .config/tmux
+    linkenv .config/zathura
+    linkenv .config/zsh
+    
+    echo -e "\n\033[1;34mCortana:\033[0m Operation completed successfully.\n"
+}
+
+main
