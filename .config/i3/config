@@ -200,14 +200,21 @@ assign [class="VirtualBox Manager"] 3
 assign [class="Zathura"] 4
 assign [class="java"] 5
 
+# polkit agent
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+
 # background image
-exec feh --no-fehbg --bg-fill ~/Pictures/creed.jpg
+exec_always feh --no-fehbg --bg-fill ~/Pictures/creed.jpg
+
 # adjusts the computer display's color temperature
 exec_always --no-startup-id redshift -P
+
 #  A lightweight compositor for X11
 exec --no-startup-id  picom -b
+
 # set the keyboard using the X Keyboard Extension
-exec setxkbmap latam
+exec_always setxkbmap latam
+
 # Mouse enabled while typing
 exec xinput set-prop "ETPS/2 Elantech Touchpad" "libinput Disable While Typing Enabled" 0
 
