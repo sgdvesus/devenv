@@ -39,6 +39,13 @@ sudo add-apt-repository ppa:git-core/ppa && sudo apt update; apt install git
 
 Generating a new ssh key and adding it to the [ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
+```sh
+git config --global user.name "name"
+git config --global user.email "me@mail.com"
+git config --global init.defaultBranch main
+git config --global core.editor "nvim"
+```
+
 # Nvim
 
 Hyperextensible vim-based text editor. Official site [nvim](https://neovim.io/).
@@ -111,7 +118,7 @@ Zsh is a shell designed for interactive use, although it is also a powerful scri
 Install zsh:
 
 ```sh
-sudo apt install zsh`.
+sudo apt install zsh
 ```
 
 Make zsh default shell(logout):
@@ -138,7 +145,7 @@ If you prefer .zshenv in the `$zdotdir` as well, you must setting ZDOTDIR in the
 
 # Tmux
 
-Tmux is a terminal multiplexer: it enables a number of terminals to be created, accessed, and controlled from a single screen. Tmux may be detached from a screen and continue running in the background, then later reattached. Official site[tmux](https://github.com/tmux/tmux).
+Tmux is a terminal multiplexer: it enables a number of terminals to be created, accessed, and controlled from a single screen. Tmux may be detached from a screen and continue running in the background, then later reattached. Official site [tmux](https://github.com/tmux/tmux).
 
 Install tmux:
 
