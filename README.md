@@ -71,7 +71,7 @@ Use packer as plugin manager.
 
 A cross-platform, opengl terminal emulator. Official site [alacritty](https://alacritty.org/).
 
-Install alacritty from [source](https://github.com/alacritty/alacritty/blob/master/install.md#prerequisites) requires rustup setup.
+Install alacritty from [source](https://github.com/alacritty/alacritty/blob/master/INSTALL.md#prerequisites) requires rustup setup.
 
 - [x] .config/alacritty/alacritty.toml
 
@@ -264,9 +264,9 @@ sudo apt install fd-find
 
 # Ripgrep
 
-Ripgrep can be installed using a binary .deb file provided in each ripgrep release. Official site [ripgrep](https://github.com/burntsushi/ripgrep).
+Ripgrep recursively searches directories for a regex pattern while respecting your gitignore. Official site [ripgrep](https://github.com/burntsushi/ripgrep).
 
-Install ripgrep:
+Ripgrep can be installed using a binary .deb file provided in each ripgrep ripgrep:
 
 ```sh
 curl -LO https://github.com/burntsushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
