@@ -128,7 +128,7 @@ Make zsh default shell(logout):
 chsh -s $(which zsh)
 ```
 
-If you prefer .zshenv in the `$zdotdir` as well, you must setting ZDOTDIR in the global configuration file `/etc/zsh/zshenv`.
+If you prefer .zshenv in the `$ZDOTDIR` as well, you must setting ZDOTDIR in the global configuration file `/etc/zsh/zshenv`.
 
 - [x] .config/zsh/.zshenv, contain env variables must be in the home directory.
 - [x] .config/zsh/.zshrc
@@ -248,6 +248,15 @@ Install fzf from git:
 ```sh
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
+```
+
+This add fzf to $PATH:
+
+```sh
+~/.local/bin/
+ln -s ~/dev/fzf/bin/fzf  ~/.local/bin/fzf
+ln -s ~/dev/fzf/bin/fzf-tmux ~/.local/bin/fzf-tmux
+ln -s ~/dev/fzf/bin/fzf-preview.sh ~/.local/bin/fzf-preview.sh
 ```
 
 # Fd
