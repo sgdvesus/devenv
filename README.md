@@ -1,6 +1,7 @@
 # ENVIROMENT
 
 Environment  development.
+main directory: ~/dev
 vim_motions = left `h` | down `j` | up `k` | right `l`
 
 # TABLE OF CONTENTS
@@ -34,7 +35,7 @@ Git is a free and open source distributed version control system designed to han
 For ubuntu, this ppa provides the latest stable upstream git version:
 
 ```sh
-sudo add-apt-repository ppa:git-core/ppa && sudo apt update; apt install git
+sudo add-apt-repository ppa:git-core/ppa && sudo apt update; sudo apt install git
 ```
 
 Generating a new ssh key and adding it to the [ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
@@ -50,7 +51,7 @@ git config --global core.editor "nvim"
 
 Hyperextensible vim-based text editor. Official site [nvim](https://neovim.io/).
 
-Install neovim build from [source](https://github.com/neovim/neovim/blob/master/build.md).
+Install neovim build from [source](https://github.com/neovim/neovim/blob/master/BUILD.md).
 
 Use packer as plugin manager.
 
@@ -134,6 +135,8 @@ If you prefer .zshenv in the `$zdotdir` as well, you must setting ZDOTDIR in the
 - [x] .config/zsh/aliases.zsh
 - [x] .config/zsh/completion.zsh
 - [x] .config/zsh/fn.zsh
+- [x] .config/zsh/fzf_completion.zsh
+- [x] .config/zsh/fzf_key_bindings.zsh
 
 |keymaps|use|
 |:---|:---|
@@ -263,8 +266,10 @@ sudo apt install fd-find
 
 Ripgrep can be installed using a binary .deb file provided in each ripgrep release. Official site [ripgrep](https://github.com/burntsushi/ripgrep).
 
+Install ripgrep:
+
 ```sh
-curl -lo https://github.com/burntsushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
+curl -LO https://github.com/burntsushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
 sudo dpkg -i ripgrep_13.0.0_amd64.deb
 ```
 

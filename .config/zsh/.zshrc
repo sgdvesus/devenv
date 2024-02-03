@@ -10,7 +10,8 @@ source $ZDOTDIR/completion.zsh
 source $ZDOTDIR/aliases.zsh
 source $ZDOTDIR/fn.zsh
 source $ZDOTDIR/vimodes.zsh
-source $ZDOTDIR/fzf.zsh
+source $ZDOTDIR/fzf_completion.zsh
+source $ZDOTDIR/fzf_key_bindings.zsh
 # SET OPTIONS
 setopt autocd
 setopt PROMPT_SUBST
