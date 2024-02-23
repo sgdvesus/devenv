@@ -7,6 +7,10 @@ alias port='netstat -tulpn | grep'
 alias fzfview='fzf --preview "batcat --color=always --style=numbers {}" --bind alt-k:preview-up,alt-j:preview-down'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
+# python
+alias py='python3'
+alias pycenv='python -m venv venv'
+alias pyenv='source venv/bin/activate'
 # git  secction
 alias g='git'
 alias gitg='git -C ~/dev/ clone'
