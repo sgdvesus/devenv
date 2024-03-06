@@ -7,10 +7,20 @@ alias port='netstat -tulpn | grep'
 alias fzfview='fzf --preview "batcat --color=always --style=numbers {}" --bind alt-k:preview-up,alt-j:preview-down'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
+# APT
+alias aptinstall='sudo apt install'
+alias aptupdate='sudo apt update'
+alias aptupgrade='sudo apt upgrade'
+alias aptsearch='apt search'
 # python
 alias py='python3'
-alias pycenv='python -m venv venv'
+alias pycenv='python3 -m venv venv'
 alias pyenv='source venv/bin/activate'
+alias pycheck='py manage.py check'
+alias pyrun='py manage.py runserver'
+alias pyserver='py manage.py runserver 0.0.0.0:8000'
+alias pymake='py manage.py makemigrations'
+alias pymigrate='py manage.py migrate'
 # git  secction
 alias g='git'
 alias gitg='git -C ~/dev/ clone'
