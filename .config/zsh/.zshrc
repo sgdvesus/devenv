@@ -30,3 +30,7 @@ zstyle ':vcs_info:git:*' formats ' %b'
 PS1='${vcs_info_msg_0_} %3~   '
 colorlis
 # '^S' C-q, '^D' EOF
+
+# fnm export
+PATH="/home/altair/.local/share/fnm:$PATH"
+eval "`fnm env`"

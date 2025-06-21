@@ -13,12 +13,19 @@ export GOBIN=$GOPATH/bin
 export GOROOT=/usr/local/go
 export GOROOTBIN=$GOROOT/bin
 # TEXLIVE
-export MYTEXLIVE=/usr/local/texlive/2023/bin/x86_64-linux
-export MYMANTEXLIVE=/usr/local/texlive/2023/texmf-dist/doc/man
-export MYINFOTEXLIVE=/usr/local/texlive/2023/texmf-dist/doc/info
+export MYTEXLIVE=/usr/local/texlive/2024/bin/x86_64-linux
+export MYMANTEXLIVE=/usr/local/texlive/2024/texmf-dist/doc/man
+export MYINFOTEXLIVE=/usr/local/texlive/2024/texmf-dist/doc/info
 # Rust PATH=$HOME/.cargo/bin
 # Add  GOBIN and GOROOTBIN to PATH
 export LBIN=$HOME/.local/bin
 export PATH=$GOROOTBIN:$GOBIN:$MYTEXLIVE:$LBIN:$PATH
-export INFOPATH=$MYINFOTEXLIVE
-export MANPATH=$MYMANTEXLIVE
+export INFOPATH=$MYINFOTEXLIVE:$INFOPATH
+export MANPATH=$MYMANTEXLIVE:$MANPATH
+# POSTGRESQL
+export DBNAME='newtoncrops'
+export DBUSER='newton'
+export DBPASS='everythingispermitted'
+export DBHOST='localhost'
+export DBPORT='5432'
+

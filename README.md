@@ -23,6 +23,7 @@ vim_motions = left `h` | down `j` | up `k` | right `l`
 - [picom](#picom)
 - [feh](#feh)
 - [polkit](#polkit)
+- [LaTex](#latex)
 
 # Brave
 
@@ -328,3 +329,11 @@ sudo apt install policykit-1-gnome
 ```
 
 Added agent on `~/.config/i3/config`.
+
+# LaTex
+
+Install [LaTex](https://www.tug.org/texlive/quickinstall.html).
+
+Add `/usr/local/texlive/2024/texmf-dist/doc/man` to MANPATH.
+Add `/usr/local/texlive/2024/texmf-dist/doc/info` to $INFOPATH.
+Add `/usr/local/texlive/2024/bin/x86_64-linux` to $PATH
